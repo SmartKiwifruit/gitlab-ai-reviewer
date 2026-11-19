@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  ai-review:
+    container_name: gitlab-ai-reviewer
+    image: gitlab-ai-reviewer:0.1.0
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./config:/app/config
+    restart: unless-stopped

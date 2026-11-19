@@ -1,0 +1,9 @@
+ai:
+  provider: qwen
+  model: qwen3.6-plus
+  max_tokens: 4000
+  temperature: 0.1
+
+gitlab:
+  url: http://your-gitlab.internal
+  api_version: v4
